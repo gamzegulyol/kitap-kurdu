@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    var user = Session["AdminLoginUser"] as Bitirme.Eticaret.Core.Model.Entity.User;
+
+
+}
+
+<style>
+    .menu {
+        padding: 0;
+        margin: 20px auto;
+
+    }
+
+
+</style>
+
+<html>
+
+<h2> @user.Name @user.LastName Admin Panele Hoşgeldiniz.</h2>
+
+<body>
+    <ul>
+        <li>
+            <a href="/Admin/Users">Üye Yönetimi</a>
+        </li>
+        <li>
+            <a href="Admin/Products">Ürün Yönetimi</a>
+        </li>
+        <li>
+            <a href="Admin/Categories">Kategori Yönetimi</a>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+<!--
+    -->
+
